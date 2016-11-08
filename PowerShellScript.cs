@@ -15,7 +15,7 @@ namespace Ketarin
             this.scriptText = scriptText;
         }
 
-        public string LastOutput { get; private set; } = string.Empty;
+        public string LastOutput { get; private set; }
 
         internal void Execute(ApplicationJob application)
         {

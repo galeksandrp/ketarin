@@ -2,15 +2,15 @@
 {
     internal class Settings
     {
-        public static int MaxRetries { get; set; } = 2;
+        public static int MaxRetries { get; set; }
 
-        public static double RetryDelay { get; set; } = 5;
+        public static double RetryDelay { get; set; }
 
-        public static int MaxSegments { get; set; } = 5;
+        public static int MaxSegments { get; set; }
 
-        public static double MinSegmentLeftToStartNewSegment { get; set; } = 30;
+        public static double MinSegmentLeftToStartNewSegment { get; set; }
 
-        public static long MinSegmentSize { get; set; } = 200000;
+        public static long MinSegmentSize { get; set; }
 
         public static string ProxyAddress { get; set; }
 
