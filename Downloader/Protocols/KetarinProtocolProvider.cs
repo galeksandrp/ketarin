@@ -63,10 +63,10 @@ namespace MyDownloader.Extension.Protocols
 
             if (!result.AcceptRanges || response == null)
             {
-                LogDialog.Log(this.job, $"Server for {rl.Url} does not support segmented transfer");
+                LogDialog.Log(this.job, "Server for {rl.Url} does not support segmented transfer");
             }
 
-            stream = response?.GetResponseStream();
+            stream = response.GetResponseStream();
 
             return result;
         }
